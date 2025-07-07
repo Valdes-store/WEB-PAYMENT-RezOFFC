@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Payment RezOFFC</title>
+    <title>Web Payment</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Nomor pembayaran telah disalin: ' + text);
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1>WELCOME TO WEB PAYMENT RezOFFC</h1>
-        <p>SS BUKTI TF DAN KIRIMKAN KE ADMIN</p>
-        <p>NOMOR DANA: 082225318338</p>
-        <img src="https://img1.pixhost.to/images/7043/619679632_erlangga.jpg" alt="QRIS" class="qris-image">
+        <h1>WELCOME TO WEB PAYMENT REZAAOFC</h1>
+        <div class="payment-methods">
+            <div class="method">
+                <h2>Dana</h2>
+                <p>Nomor Dana: 082225318338</p>
+                <button onclick="copyToClipboard('082225318338')">Salin Nomor Pembayaran</button>
+            </div>
+            <div class="method">
+                <h2>QRIS</h2>
+                <img src="https://img1.pixhost.to/images/7043/619679632_erlangga.jpg" alt="QRIS" class="qris-image">
+                <p>Scan QRIS untuk pembayaran</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
