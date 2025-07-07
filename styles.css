@@ -1,29 +1,58 @@
+/* styles.css */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #001f3f; /* Dark blue background */
     color: white;
-    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
-    padding: 50px;
+    max-width: 600px;
+    margin: auto;
+    background: #003366; /* Darker blue for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
 }
 
-p {
-    font-size: 1.2em;
-    margin: 10px 0;
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.method {
+    background: #004080; /* Medium blue for each method */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.method h2 {
+    color: #ffffff;
+}
+
+button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .qris-image {
-    margin-top: 20px;
-    width: 300px; /* Adjust size as needed */
+    max-width: 100%;
     height: auto;
-    border: 2px solid white; /* Optional border */
-    border-radius: 10px; /* Rounded corners */
-}
+    }
