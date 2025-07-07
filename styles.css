@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Dark blue background */
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.qris-image {
+    margin-top: 20px;
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border: 2px solid white; /* Optional border */
+    border-radius: 10px; /* Rounded corners */
+}
